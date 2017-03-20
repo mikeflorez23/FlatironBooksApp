@@ -1,0 +1,363 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4C5411381E79B1B400B294C3 /* BookDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5411371E79B1B400B294C3 /* BookDetailViewController.swift */; };
+		4C7429191E797A6300E2FA38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7429181E797A6300E2FA38 /* AppDelegate.swift */; };
+		4C74291E1E797A6300E2FA38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C74291C1E797A6300E2FA38 /* Main.storyboard */; };
+		4C7429201E797A6300E2FA38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C74291F1E797A6300E2FA38 /* Assets.xcassets */; };
+		4C7429231E797A6300E2FA38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C7429211E797A6300E2FA38 /* LaunchScreen.storyboard */; };
+		4C74292B1E797CF500E2FA38 /* BookListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C74292A1E797CF500E2FA38 /* BookListViewController.swift */; };
+		4C74292D1E79832300E2FA38 /* AddBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C74292C1E79832300E2FA38 /* AddBookViewController.swift */; };
+		4C7429311E798C9000E2FA38 /* BooksTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7429301E798C9000E2FA38 /* BooksTableViewCell.swift */; };
+		4C7429331E798D3100E2FA38 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7429321E798D3100E2FA38 /* Book.swift */; };
+		4C7429361E798F6C00E2FA38 /* BooksAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7429351E798F6B00E2FA38 /* BooksAPI.swift */; };
+		4C74293A1E79961500E2FA38 /* BooksDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7429391E79961500E2FA38 /* BooksDataStore.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4C5411371E79B1B400B294C3 /* BookDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookDetailViewController.swift; sourceTree = "<group>"; };
+		4C7429151E797A6200E2FA38 /* FlatironBooksApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlatironBooksApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C7429181E797A6300E2FA38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4C74291D1E797A6300E2FA38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4C74291F1E797A6300E2FA38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4C7429221E797A6300E2FA38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4C7429241E797A6300E2FA38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C74292A1E797CF500E2FA38 /* BookListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookListViewController.swift; sourceTree = "<group>"; };
+		4C74292C1E79832300E2FA38 /* AddBookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddBookViewController.swift; sourceTree = "<group>"; };
+		4C7429301E798C9000E2FA38 /* BooksTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BooksTableViewCell.swift; path = ../BooksTableViewCell.swift; sourceTree = "<group>"; };
+		4C7429321E798D3100E2FA38 /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		4C7429351E798F6B00E2FA38 /* BooksAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BooksAPI.swift; sourceTree = "<group>"; };
+		4C7429391E79961500E2FA38 /* BooksDataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BooksDataStore.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4C7429121E797A6200E2FA38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4C74290C1E797A6200E2FA38 = {
+			isa = PBXGroup;
+			children = (
+				4C7429171E797A6200E2FA38 /* FlatironBooksApp */,
+				4C7429161E797A6200E2FA38 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4C7429161E797A6200E2FA38 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4C7429151E797A6200E2FA38 /* FlatironBooksApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4C7429171E797A6200E2FA38 /* FlatironBooksApp */ = {
+			isa = PBXGroup;
+			children = (
+				4C74291C1E797A6300E2FA38 /* Main.storyboard */,
+				4C74292E1E79832900E2FA38 /* ViewController */,
+				4C7429341E798DAC00E2FA38 /* DataModel */,
+				4C7429381E798F9600E2FA38 /* DataModelController */,
+				4C74292F1E7989AF00E2FA38 /* Resources */,
+			);
+			path = FlatironBooksApp;
+			sourceTree = "<group>";
+		};
+		4C74292E1E79832900E2FA38 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4C74292A1E797CF500E2FA38 /* BookListViewController.swift */,
+				4C5411371E79B1B400B294C3 /* BookDetailViewController.swift */,
+				4C7429301E798C9000E2FA38 /* BooksTableViewCell.swift */,
+				4C74292C1E79832300E2FA38 /* AddBookViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		4C74292F1E7989AF00E2FA38 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4C7429181E797A6300E2FA38 /* AppDelegate.swift */,
+				4C7429211E797A6300E2FA38 /* LaunchScreen.storyboard */,
+				4C74291F1E797A6300E2FA38 /* Assets.xcassets */,
+				4C7429241E797A6300E2FA38 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		4C7429341E798DAC00E2FA38 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				4C7429321E798D3100E2FA38 /* Book.swift */,
+			);
+			name = DataModel;
+			sourceTree = "<group>";
+		};
+		4C7429381E798F9600E2FA38 /* DataModelController */ = {
+			isa = PBXGroup;
+			children = (
+				4C7429351E798F6B00E2FA38 /* BooksAPI.swift */,
+				4C7429391E79961500E2FA38 /* BooksDataStore.swift */,
+			);
+			name = DataModelController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4C7429141E797A6200E2FA38 /* FlatironBooksApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C7429271E797A6300E2FA38 /* Build configuration list for PBXNativeTarget "FlatironBooksApp" */;
+			buildPhases = (
+				4C7429111E797A6200E2FA38 /* Sources */,
+				4C7429121E797A6200E2FA38 /* Frameworks */,
+				4C7429131E797A6200E2FA38 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlatironBooksApp;
+			productName = FlatironBooksApp;
+			productReference = 4C7429151E797A6200E2FA38 /* FlatironBooksApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4C74290D1E797A6200E2FA38 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Michael;
+				TargetAttributes = {
+					4C7429141E797A6200E2FA38 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 4C7429101E797A6200E2FA38 /* Build configuration list for PBXProject "FlatironBooksApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4C74290C1E797A6200E2FA38;
+			productRefGroup = 4C7429161E797A6200E2FA38 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4C7429141E797A6200E2FA38 /* FlatironBooksApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4C7429131E797A6200E2FA38 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C7429231E797A6300E2FA38 /* LaunchScreen.storyboard in Resources */,
+				4C7429201E797A6300E2FA38 /* Assets.xcassets in Resources */,
+				4C74291E1E797A6300E2FA38 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4C7429111E797A6200E2FA38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C7429311E798C9000E2FA38 /* BooksTableViewCell.swift in Sources */,
+				4C7429191E797A6300E2FA38 /* AppDelegate.swift in Sources */,
+				4C74293A1E79961500E2FA38 /* BooksDataStore.swift in Sources */,
+				4C74292D1E79832300E2FA38 /* AddBookViewController.swift in Sources */,
+				4C7429361E798F6C00E2FA38 /* BooksAPI.swift in Sources */,
+				4C7429331E798D3100E2FA38 /* Book.swift in Sources */,
+				4C5411381E79B1B400B294C3 /* BookDetailViewController.swift in Sources */,
+				4C74292B1E797CF500E2FA38 /* BookListViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4C74291C1E797A6300E2FA38 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C74291D1E797A6300E2FA38 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4C7429211E797A6300E2FA38 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C7429221E797A6300E2FA38 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4C7429251E797A6300E2FA38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4C7429261E797A6300E2FA38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4C7429281E797A6300E2FA38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FlatironBooksApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.michael.FlatironBooksApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		4C7429291E797A6300E2FA38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FlatironBooksApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.michael.FlatironBooksApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4C7429101E797A6200E2FA38 /* Build configuration list for PBXProject "FlatironBooksApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C7429251E797A6300E2FA38 /* Debug */,
+				4C7429261E797A6300E2FA38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C7429271E797A6300E2FA38 /* Build configuration list for PBXNativeTarget "FlatironBooksApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C7429281E797A6300E2FA38 /* Debug */,
+				4C7429291E797A6300E2FA38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4C74290D1E797A6200E2FA38 /* Project object */;
+}
