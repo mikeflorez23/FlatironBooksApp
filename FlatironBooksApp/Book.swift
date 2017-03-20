@@ -14,13 +14,14 @@ class Book {
     let author: String
     let publisher: String
     let url: String
-//    let lastCheckedout: String?
+    let lastCheckedout: String?
     
-    init(title: String, author: String, publisher: String, url: String) {
+    init(title: String, author: String, publisher: String, url: String, lastCheckedout: String) {
         self.title = title
         self.author = author
         self.publisher = publisher
         self.url = url
+        self.lastCheckedout = lastCheckedout
     }
     
 }

@@ -21,14 +21,16 @@ class BooksDataStore {
         guard let title = book["title"],
             let author = book["author"],
             let publisher = book["publisher"],
-            let url = book["url"] else {return}
+            let url = book["url"],
+            let checkOut = book["lastcheckedoutby"] else {return}
         
         let titleString = title as? String ?? ""
         let authorString = author as? String ?? ""
         let publisherString = publisher as? String ?? ""
         let urlString = url as? String ?? ""
+        let checkoutString = checkOut as? String ?? ""
         
-        let bookToAdd = Book(title: titleString, author: authorString, publisher: publisherString, url: urlString)
+        let bookToAdd = Book(title: titleString, author: authorString, publisher: publisherString, url: urlString, lastCheckedout: checkoutString)
         
         BooksDataStore.shared.books.append(bookToAdd)
     }

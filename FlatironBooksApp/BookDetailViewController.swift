@@ -21,16 +21,16 @@ class BookDetailViewController: UIViewController {
         super.viewDidLoad()
         if let bookTitle = book?.title,
             let author = book?.author,
-            let publisher = book?.publisher {
+            let publisher = book?.publisher,
+            let checkedOut = book?.lastCheckedout {
             titleLabel.text = bookTitle
             authorLabel.text = "By: \(author)"
             publisherLabel.text = "Publisher: \(publisher)"
+            checkoutLabel.text = checkedOut
         }
     }
     
     @IBAction func checkoutButtonTapped(_ sender: Any) {
-        
-        
         //todo 
     }
     

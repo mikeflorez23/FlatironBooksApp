@@ -11,7 +11,7 @@ import Foundation
 class BooksAPI {
     
     class func getBooks(_ completion: @escaping () -> ()) {
-        
+        BooksDataStore.shared.books.removeAll()
         let urlString = "https://flatironchallenge.herokuapp.com/books"
         guard let url = URL(string: urlString) else {fatalError("Invaild URL")}
         let request = URLRequest(url: url)
@@ -20,8 +20,8 @@ class BooksAPI {
             guard let responseData = data else {fatalError("Data Error")}
             do {
                 guard let responseJSON = try JSONSerialization.jsonObject(with: responseData, options: []) as? [[String:Any]] else {fatalError("Error")}
-                let results = responseJSON as? [[String:Any]]
-                results?.forEach({ (booksDict) in
+                //                let results = responseJSON as? [[String:Any]]
+                responseJSON.forEach({ (booksDict) in
                     BooksDataStore.addBookToArray(booksDict)
                 })
             } catch {
@@ -40,15 +40,14 @@ class BooksAPI {
         request.httpMethod = "POST"
         
         guard let json = try? JSONSerialization.data(withJSONObject: book, options: []) else { return }
-            request.httpBody = json
-            let session = URLSession.shared
-            let task = session.dataTask(with: request, completionHandler:  { (data, response, error) in
-                guard (response as? HTTPURLResponse) != nil else {fatalError("Invalid response")}
-                completion()
-            })
-            task.resume()
-        
+        request.httpBody = json
+        let session = URLSession.shared
+        let task = session.dataTask(with: request, completionHandler:  { (data, response, error) in
+            guard (response as? HTTPURLResponse) != nil else {fatalError("Invalid response")}
+            completion()
+        })
+        task.resume()
     }
-        
+    
     
 }

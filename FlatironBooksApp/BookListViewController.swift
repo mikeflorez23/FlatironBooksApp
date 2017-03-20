@@ -16,13 +16,16 @@ class BookListViewController: UIViewController, UITableViewDelegate, UITableView
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
         BooksAPI.getBooks {
             DispatchQueue.main.async {
                 self.tableView.reloadData()
             }
         }
     }
-    
     
     // MARK: - DataSource
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -37,10 +40,7 @@ class BookListViewController: UIViewController, UITableViewDelegate, UITableView
         return cell
     }
     
-    
-    
     // MARK: - Navigation
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toBookDetailVC" {
             if let dest = segue.destination as? BookDetailViewController,
