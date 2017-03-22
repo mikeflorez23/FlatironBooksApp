@@ -46,13 +46,8 @@ class AddBookViewController: UIViewController {
                                          "publisher": publisher,
                                          "url": url]
             BooksAPI.addBook(book: newBook, completion: { 
-                
             })
-            
             dismiss(animated: true, completion: nil)
         }
     }
-
-    
-    
 }

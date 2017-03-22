@@ -17,7 +17,6 @@ class BooksDataStore {
     fileprivate init() {}
     
     class func addBookToArray(_ book: [String:Any]) {
-        
         guard let title = book["title"],
             let author = book["author"],
             let publisher = book["publisher"],
@@ -28,7 +27,7 @@ class BooksDataStore {
         let authorString = author as? String ?? ""
         let publisherString = publisher as? String ?? ""
         let urlString = url as? String ?? ""
-        let checkoutString = checkOut as? String ?? ""
+        let checkoutString = checkOut as? String ?? "Book has not been checked out"
         
         let bookToAdd = Book(title: titleString, author: authorString, publisher: publisherString, url: urlString, lastCheckedout: checkoutString)
         
